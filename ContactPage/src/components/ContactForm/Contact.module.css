@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.top_button{
+    display: flex;
+    gap: 32px;
+
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.form_control {
+  position: relative;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.form_control input {
+  width: 95%;
+  height: 20px;
+  padding: 12px 10px;
+  border: 1px solid #0a0909;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Place label over input */
+.form_control label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 4px;
+  color: #777;
+  font-size: 16px;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* On focus OR when input has text */
+.form_control input:focus + label,
+.form_control input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 13px;
+  color: black;
+}
+
+.form_control textarea {
+  width: 95%;
+  padding: 12px 10px;
+  border: 1px solid #050404;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  resize: vertical; /* user can resize vertically */
+  min-height: 70px; /* fallback if rows not applied */
+}
+
+.form_control textarea:focus + label,
+.form_control textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 13px;
+  color: black;
+}

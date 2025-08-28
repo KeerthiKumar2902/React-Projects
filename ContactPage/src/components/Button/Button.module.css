@@ -1,0 +1,47 @@
+.primary_btn{
+    padding: 18px 10px;
+    background-color: black;
+    color: white;
+    min-width: 220px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.primary_btn:hover{
+    background-color: white;   /* invert colors */
+    color: black;
+    border: 2px solid black;   /* optional outline */
+    transform: scale(1.05); 
+}
+
+.outline_btn{
+    padding: 18px 10px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    min-width: 472px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.outline_btn:hover{
+    background-color: black;   /* invert colors */
+    color: white;
+    border: 2px solid black;   /* optional outline */
+    transform: scale(1.05); 
+}
