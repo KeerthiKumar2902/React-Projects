@@ -13,7 +13,7 @@ const GlobalStyle= createGlobalStyle`
   body{
     background-color : black;
     color: white;
-    min-heigth: 100vh;
+    min-height: 100vh;
     font-family: 'Inter' , sans-serif;
   }
 `;
